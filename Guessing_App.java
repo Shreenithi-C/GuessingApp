@@ -9,6 +9,8 @@ public class Guessing_App {
 		System.out.println("===========================");
 		System.out.println("Welcome to the Guessing App");
 		System.out.println("===========================");
+		
+		do{
 
 		System.out.print("Enter PLayer Name: ");
 		String player=sc.nextLine();
@@ -37,5 +39,7 @@ public class Guessing_App {
 			}
 		}
 		StorageService.saveResult(player, attempts, win);
-	}		
+		restart=GameController.restartGame(sc);
+		} while(restart);		
+	}
 }
