@@ -4,8 +4,8 @@ class GameConfig
 	private final int MAX=100;
 	private final int MAX_ATTEMPTS=7;
 	private final int MAX_HINTS=3;
-	 
 	int targetNumber;
+	
 	public GameConfig(){
 		Random random=new Random();
 		this.targetNumber=random.nextInt(MAX-MIN+1)+MIN;
