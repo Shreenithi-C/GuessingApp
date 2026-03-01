@@ -1,6 +1,5 @@
 class ValidationService{
-	public static int validateInput(String input)
-		throws InvalidInputException{
+	public static int validateInput(String input) throws InvalidInputException {
 	try{
 		int value=Integer.parseInt(input);
 		if(value<1 || value>100){
